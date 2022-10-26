@@ -1,0 +1,29 @@
+.container{
+    width: min(80ch, 100vw - 2rem);
+    margin-inline: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #152759;
+    font-size: large;
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+    margin: 4rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+header{
+    margin: 5rem;
+
+}
+article {
+    max-width: 65ch;
+   margin: auto;
+   font-family: cursive;
+    background-color: aliceblue;
+}
