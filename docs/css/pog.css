@@ -24,18 +24,24 @@ nav > ul{
     text-decoration: white;
     font-size: larger;
 }
-.sidenav {
-    height: 100%; 
-    width: 320px; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: gainsboro; 
-    color: black;
-    overflow-x: hidden; 
-    padding-top: 210px;
-    padding-left: 7px;
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sidebar {
+    /* ↓ The width when the sidebar _is_ a sidebar */
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+
+.not-sidebar {
+    /* ↓ Grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    /* ↓ Wrap when the elements are of equal width */
+    min-inline-size: 50%;
 }
 nav > a {
 
@@ -65,13 +71,3 @@ article>p{
 article>h1{
     margin: 10px;
 }
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav p {font-size: 18px;}
-    nav>a>img {max-width: 99;}
-    nav>a>img {max-height: 50;}
-    .sidenav >img {max-width: 183;}
-    .sidenav >img {max-height: 156;}
-    .sidenav {width: 200;}
-    articel{padding-left: 220;}
-  }
