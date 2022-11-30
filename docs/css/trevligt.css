@@ -6,7 +6,6 @@ body{
     margin: 0;
 }
 nav{
-    z-index: 2;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -23,6 +22,17 @@ nav > ul{
     color: aliceblue;
     text-decoration: white;
     font-size: larger;
+}
+nav > a {
+
+    padding-left: 2rem;
+    background-color: #152759;
+    max-width: 100%;
+    max-height: 100%;
+}   
+nav>a>img{
+    max-width: 396;
+    max-height: 200;
 }
 .with-sidebar {
     display: flex;
@@ -43,18 +53,7 @@ nav > ul{
     /* ↓ Wrap when the elements are of equal width */
     min-inline-size: 50%;
 }
-nav > a {
 
-    padding-left: 2rem;
-    z-index: 2;
-    background-color: #152759;
-    max-width: 100%;
-    max-height: 100%;
-}   
-nav>a>img{
-    max-width: 396;
-    max-height: 200;
-}
 header>ul{
     gap: 1rem;
     list-style: none;
