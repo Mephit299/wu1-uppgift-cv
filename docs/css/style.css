@@ -5,6 +5,7 @@
 body{
     margin: 0;
     height: 100%;
+    background-color: aliceblue;
 }
 nav{
     width: 100%;
@@ -26,7 +27,9 @@ nav > ul{
     font-size:large;
     
 }
-
+nav>ul>li>a{
+    color: aliceblue;
+}
 nav > a {
     background-color: #152759;
     max-width: 50%;
@@ -51,6 +54,7 @@ nav>a>img{
     /* ↓ The width when the sidebar _is_ a sidebar */
     padding-top: 2rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     flex-basis: 20rem;
     flex-grow: 1;
     background-color: gainsboro;
@@ -62,8 +66,8 @@ aside>img{
 }
 aside>ul{
     list-style: none;
-    margin: none;
-    padding: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .not-sidebar {
@@ -71,7 +75,7 @@ aside>ul{
     flex-basis: 0;
     flex-grow: 999;
     /* ↓ Wrap when the elements are of equal width */
-    min-inline-size: 50%;
+    min-inline-size: 37%;
 }
 
 header>ul{
@@ -82,7 +86,6 @@ header>ul{
 article {
     width: min(40ch, 100vw - 1rem);
     font-family: 'Times New Roman', Times, serif;
-    background-color: aliceblue;
 }
 article>p{
     margin: 3px;
@@ -90,6 +93,18 @@ article>p{
 article>h1{
     margin: 10px;
 }
-@media screen and (max-height: 700px) {
-    nav>a>img {max-width: 200;}
+
+@media only screen and (max-width: 665px){
+    nav>ul{
+        display: block;
+        margin: 2rem;
+    }
+    .sidebar{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    nav>a>img{
+        padding-left: 1rem;
+    }
 }

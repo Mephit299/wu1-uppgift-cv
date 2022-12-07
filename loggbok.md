@@ -24,10 +24,31 @@ Skriv även sådant som du måste arbeta med nästa pass.
 
     This did not hapen 
 
-    Cheklista för webbplats
+    Vecka 48:
+
+Bytte till en anna sidebar som calar bättre
+Redovisade cv för klassen
+Fixade scaling på saker.
+
+        Vecka 49:
+    Checklista för webbplats
 
 Sidan fungerar.
 Länkarna fungerar.
 Html hade ett problem med att jag hade glömt att ta bort en </html> tag från att jag förbättrade min sidebar och den fans kvar efter min copy, paste.
 Hade en onvänd </h2> tag.
-Css var felfritt.
+Css klagde på att none inte är ett värde för margin eller padding. Glömde en längdeneht en gång.
+index.html filen är strukturerad.
+Inehållet är samma som jag tänkte med figma skisen.
+Alting bör vara lagligt om inte Fromsoft eller actevison har ett problem med att jag använder ett ingame screenshot som jag tog själv.
+Text navigationen skalar inte ner på ett sett som jag vill så det ser dåligt ut. Arnas ser det bra ut.
+Margin på bilden av min karaktär är lite wack.
+Sidan är öppen och fungerar på min dator.
+WAVE: 3 Kontrastfel på mina länkar. Fult medveten om dom här.Vet inte hut jag fixar det. Min loga är SUS för någon anledning. En redundant länk.
+Osäker vad som ska vara här men alla bilder scalar till skärmstorlek.
+Har ingen javascript.
+Yes ... but not realy.
+Kollade på sidan i lighthouse. pushar till origin för att få med mina ändringar.
+
+
+Fixade mer scaling och problemen med checklistan
