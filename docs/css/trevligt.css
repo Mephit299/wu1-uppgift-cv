@@ -60,6 +60,11 @@ nav>a>img{
 aside>img{
     max-width: 100%;
 }
+aside>ul{
+    list-style: none;
+    margin: none;
+    padding: none;
+}
 
 .not-sidebar {
     /* ↓ Grow from nothing */
