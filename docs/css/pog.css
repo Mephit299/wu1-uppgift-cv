@@ -1,0 +1,77 @@
+.container{
+    width: min(40ch, 100vw - 1rem);
+
+}
+body{
+    margin: 0;
+}
+nav{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #152759;
+    font-size: large;
+}
+nav > ul{
+    background-color: #152759;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+    margin: 4rem;
+    color: aliceblue;
+    text-decoration: white;
+    font-size: larger;
+}
+.sidenav {
+    height: 100%; 
+    width: 320px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: gainsboro; 
+    color: black;
+    overflow-x: hidden; 
+    padding-top: 210px;
+    padding-left: 7px;
+}
+nav > a {
+
+    padding-left: 2rem;
+    z-index: 2;
+    background-color: #152759;
+    max-width: 100%;
+    max-height: 100%;
+}   
+nav>a>img{
+    max-width: 396;
+    max-height: 200;
+}
+header>ul{
+    gap: 1rem;
+    list-style: none;
+    max-width: 35ch;
+}
+article {
+    padding-left: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+}
+article>p{
+    margin: 3px;
+}
+article>h1{
+    margin: 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav p {font-size: 18px;}
+    nav>a>img {max-width: 99;}
+    nav>a>img {max-height: 50;}
+    .sidenav >img {max-width: 183;}
+    .sidenav >img {max-height: 156;}
+    .sidenav {width: 200;}
+    articel{padding-left: 220;}
+  }
